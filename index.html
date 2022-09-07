@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotThecode</title>
+
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/Body.css">
+    <link rel="stylesheet" href="./src/Videos.css">
+    <link rel="stylesheet" href="./src/About.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body > 
+    <script>
+        // code for hamburger functionality
+        function showHide() {
+          var x = document.getElementById("hamburger-menu");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+          }
+        }
+
+        function hide(){
+            document.getElementById("hamburger-menu").style.display="none";
+        }
+  </script>
+
+<!-- _________NavBar:Header__________ -->
+<div class="nav">
+    <img src="src/images/Logo.svg" alt="logo" width='80px' />
+    <div class="menu">
+    <img src="src/images/Hamburger.svg" alt=""  onclick=showHide()  width="50px"/>
+      <div class="navMenu" id="hamburger-menu">
+        <a href="#home" >home</a>
+        <a href="#cse" >cse</a>
+        <a href="src/pages/mcq.html" >mcqs</a>
+        <a href="#videos" >videos</a>
+        <a href="#" >results</a>
+        <a href="#about" >about me</a>
+      </div>
+    </div>
+</div>
+
+
+
+    <!-- _________Body:mainPage__________ -->
+    <div class="home" id="home" onclick=hide()>
+        <img src="src/images/Grades_mobile.svg" alt="" />
+
+        <div class="home-content">
+        <h1>spotThecode</h1>          
+        <p> <b>a self-learning portal</b><br></br>
+        begin your computer engineering journey with us for free.</p>
+        
+        <div class="btns">
+        <a href="#quotes" class='primaryBtn'>begin</a>
+        <a href="src/pages/mcq.html"  class='secondaryBtn'>mcqs</a>
+        </div>
+        </div>
+
+        <div class="socialMedia">
+          <a href="#" target="_blank" rel="noopener noreferrer"><img src="src/images/Instagram.svg" /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><img src="src/images/Github.svg" /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><img src="src/images/Linkedin.png" /></a>
+      </div>
+    </div>
+
+    <div class="quotes" id="quotes"> 
+        <h1>self-study</h1>
+        <p>"formal education will make you a living; <br></br>
+            self-education will make you a fortune."</p>
+    </div>
+
+    <div class="csBody" id="cse">
+        <h1>computer science and engineering</h1>
+        <img src="src/images/Notebook.svg" alt="" width="300px"/>
+        <p>get direct <b>access</b>to Notes, PDF Books, Practical/sessional and PYQs for <b>free.</b></p>
+        
+        <div class="csbtns">
+        <a href="unavailable.html" class='primaryBtn'>diploma</a>
+        <a href="unavailable.html" class='secondaryBtn'>b-tech</a>
+        </div>
+    </div>
+
+
+
+    <!-- _________Videos________ -->
+    
+    <div class="videosContainer" id="videos">
+        <h1>Youtube Playlist</h1>
+        <div class="videos">
+          <div class="card" id="card1">
+          <iframe class="cardBody" src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+              <p class="cardTittle">DBMS full Course.</p>
+          </div>
+  
+          <div class="card" id="card2">
+            <iframe class="cardBody" src="https://www.youtube.com/embed/KhwTdRRPjEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <div class="cardTittle">VS code setup for C/C++.</div>
+          </div>
+  
+          <div class="card" id="card3">
+          <iframe class="cardBody" src="https://www.youtube.com/embed/oYOexDRzvMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+              <p class="cardTittle">Java setup tutorial.</p>
+          </div>
+  
+          <div class="card" id="card4">
+          <iframe class="cardBody" src="https://www.youtube.com/embed/gfDE2a7MKjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+              <p class="cardTittle">Python full course.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- _________About__________ -->
+      <div class="about" id="about">
+        <img src="src/images/DP.svg" alt="" width="100px" />
+        <h1>md azad</h1>
+        <p>
+          ui designer | front-end web developer<br></br>
+          Government Polytechnic, Chapra
+        </p>
+
+        <form action="" method="post">
+          <input
+            type="text"
+            placeholder="write something..."
+            name="message"
+            id="userMassage"
+          />
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            name="email"
+            id="userEmail"
+          />
+          <button type="submit" id="sendBtn">send</button>
+         
+        </form>
+       
+
+      </div>
+      <!-- <div class="socialMedia">
+                <img src="src/images/Instagram.svg" />
+                <img src="src/images/Github.svg" />
+                <img src="src/images/Linkedin.png" />
+            </div> -->
+        <p class="footer"> designed & developed by @mdazad2.0</p>
+
+
+    
+</body>
+</html>

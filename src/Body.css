@@ -1,0 +1,206 @@
+h1{
+    font-size: 26px;
+    color:#1B262C;
+    
+    text-transform: uppercase;
+    font-family: calibri;
+    line-height: 48px;
+    text-align: center;
+}
+.home h1{
+    margin-top: 1em;
+    font-size:32px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.home{
+ /* background-color: red; */
+    height: 90vh;
+
+    padding: 50px 5%;
+    position: relative;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-end; */
+}
+
+.home p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:#707070;
+
+    line-height: 20px;
+    margin-top: 1em;
+}
+.home .btns{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+ .home .primaryBtn,
+ .home .secondaryBtn{
+
+    /* width: 80%;
+    height: 60px; */
+    text-decoration: none;
+    /* margin: 50px 50px 0px 0px; */
+
+    margin: 50px 5px;
+    /* padding: 1.5em 8em; */
+    height:3.5em;
+    width:10em;
+    
+    border-radius: 20px;
+    
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primaryBtn{
+    background-color: #5a00cc;
+    border: 2px solid #5a00cc;
+    
+    background: #5a00cc;
+    -webkit-box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+    color:white;
+
+
+}
+
+.secondaryBtn{
+    color: #6B69D6;
+    border: 2px solid #6B69D6;
+ 
+}
+.home .primaryBtn:hover{
+    background-color: #7d42cb;
+    user-select: none;
+}
+.home .secondaryBt:hover{
+    background-color: #aaaaaa;
+    user-select: none;
+
+}
+
+.quotes{
+    height: 50vh;
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+}
+.quotes h1{
+    /* font-size: 24px; */
+    font-weight: bold;
+    text-align: center;
+    color:#1B262C;
+    margin-block-end: 10px;
+}
+
+.quotes p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:white;
+}
+.quotes p{
+    color: white;
+    padding: 40px 30px;
+    margin: 5px;
+    border-radius:30px;
+    background-color:#410093;
+    /* background-color:#5a00cc; */
+
+    /* background: #410093; */
+    -webkit-box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+    box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+}
+
+
+.csBody{
+   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+.csBody h1{
+    /* font-size: 24px; */
+    color:#1B262C;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: calibri;
+    line-height: 35px;
+
+}
+.csBody img{
+    margin-block-start: 50px;
+}
+.csBody p{
+    color:#707070;
+    margin: 50px 0px 100px 0px;
+    font-size: 18px;
+    font-family: calibri;
+    text-align: center;
+
+}
+.csBody a{
+    text-align: center;
+    width: 40%;
+}
+.csBody .primaryBtn{
+    text-align: center;
+    background-color: #410093;
+    border: 2px solid #410093;
+   
+    color:white;
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+
+}
+
+.csBody .secondaryBtn{
+    text-align: center;
+    color: #410093;
+    /* border: 2px solid #6B69D6; */
+    /* background-color:whitesmoke; */
+    margin-block-end: 40px;
+    padding: 20px 40px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    border-style: none;
+
+    background: #dfdfdf;
+    -webkit-box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+    box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+
+
+}
+.csBody a{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.csBtns{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 20px;
+}

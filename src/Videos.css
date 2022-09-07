@@ -1,0 +1,55 @@
+
+.videosContainer h1{
+    /* background-color:#5a00cc; */
+    /* background-color:#1B262C; */
+    background-color:#410093;
+    color: white;
+    padding: 15px;
+    border-radius: 0px;
+    
+
+    font-size: 24px;
+
+}
+.videos{
+    /* height: 80vh; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+    margin-top: 20px;
+
+
+    /* padding-top: 100px; */
+}
+.card{
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;  
+
+    background: #f2f2f2;
+    -webkit-box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+    box-shadow: 5px 5px 10px #e8e8e8, -5px -5px 10px #fcfcfc;
+
+}
+.cardBody{
+    background-color: rgb(234, 234, 234);
+    margin-top: 2%;
+    width: 96%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.cardTittle{
+    
+    padding: 10px;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+

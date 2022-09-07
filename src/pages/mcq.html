@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotThecode</title>
+
+    <link rel="stylesheet" href="../index.css" />
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <script>
+      // code for hamburger functionality
+      function showHide() {
+        var x = document.getElementById("hamburger-menu");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+
+      function hide() {
+        document.getElementById("hamburger-menu").style.display = "none";
+      }
+    </script>
+
+    <!-- _________NavBar:Header__________ -->
+    <div class="nav">
+      <img src="../images/Logo.svg" alt="logo" width="80px" />
+      <div class="menu">
+        <img
+          src="../images/Hamburger.svg"
+          alt=""
+          onclick="showHide()"
+          width="50px"
+        />
+        <div class="navMenu" id="hamburger-menu">
+          <a href="../../index.html">home</a>
+          <a href="../../index.html">cse</a>
+          <a href="#">mcqs</a>
+          <a href="#videos">videos</a>
+          <a href="#">results</a>
+          <a href="#about">about me</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ______mcqs______ -->
+<div class="mcqPage">
+
+    <div class="subjectBox">
+    
+            <a href="#">Operating System</a>
+            <a href="#">DBMS</a>
+            <a href="#">COA</a>
+            <a href="#">OOPs</a>
+            <a href="#">Python</a>
+            <a href="#">C++</a>
+        
+    </div>
+
+    <div class="mcq" id="subject-1">
+        <h1>Operating System</h1>
+
+        <!-- Type your all MCQ questions here... -->
+
+        <h3>1.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>                    
+            <h3>2.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>   
+            <h3>3.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>   
+            <h3>4.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>   
+            <h3>5.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol> 
+            <h3>6.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>  
+            <h3>7.Type a mulitiple choise question.</h3>
+            <ol>
+                <li>option-A</li>
+                <li>option-B</li>
+                <li>option-C</li>
+                <li>option-D</li>
+            </ol>      
+    </div>
+</div>
+  </body>
+</html>
+
+<style>
+.mcqPage{
+    display: flex;
+
+}
+.subjectBox{
+
+}
+    .subjectBox{
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        padding:0.5em 2em;
+        padding-right: 4em;
+
+        /* width: 15em; */
+        height: 100vh;
+        background-color: #410093;
+        /* border-radius: 20px; */
+    }
+    .subjectBox a{
+        font-size: 18px;
+        font-family: calibri;
+        text-decoration: none;
+        padding: 0.3em 0.5em;
+        color: white;
+
+        
+    }
+    .subjectBox a:hover,
+    .subjectBox a:active{
+        background-color: rgb(231, 205, 255);
+        
+        border-radius: 5px;
+        color: black;
+        transition: 0.3s;
+    }
+  
+    .subjectBox{
+           position:fixed;
+        }
+   .mcq{
+       width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+       margin: 5%;        
+   }
+   .mcq h1{
+       color:#410093;
+       border: 2px solid #410093;
+       border-radius: 20px;
+       text-align: center;
+       padding: 10px;
+       position: sticky;
+       top:2.5em;
+       background-color: #FBFBFB;
+   }
+    .mcq h3{
+        margin: 20px 0px 10px 0px;
+
+        /* text-align: center; */
+    }
+     
+    .mcq ol li{
+        font-family: calibri;
+
+    }
+    .subjectBox{
+            z-index: 1;
+          left: -230px;
+        }
+    .subjectBox:hover{
+            left: 0px;
+            transition: 0.5s;
+        }
+
+    @media screen and (max-device-width: 500px) {
+        /* .subjectBox{
+            z-index: 1;
+          left: -230px;
+        } */
+        .subjectBox a{
+            padding: 10px;
+        }
+        /* .subjectBox:hover{
+            left: 0px;
+            transition: 0.5s;
+        } */
+        .mcq{
+            padding-left: 20px;
+        }
+        .mcq h1{
+            position: sticky;
+            top:8.4%;
+            padding: 20px;
+            background-color: #FBFBFB;
+    }
+}
+</style>
